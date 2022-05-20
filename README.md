@@ -1,2 +1,2 @@
 # teams-dashboard
-Hackathon challange
+INN.KUBATOR Passau Hackathon challange
