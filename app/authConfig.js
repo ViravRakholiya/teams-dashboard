@@ -45,7 +45,7 @@ const msalConfig = {
  * https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#openid-connect-scopes
  */
 const loginRequest = {
-    scopes: ["User.Read"]
+    scopes: ["User.Read.All"]
 };
 
 /**
@@ -53,6 +53,6 @@ const loginRequest = {
  * https://github.com/AzureAD/microsoft-authentication-library-for-js/blob/dev/lib/msal-browser/docs/resources-and-scopes.md
  */
 const tokenRequest = {
-    scopes: ["User.Read", "Mail.Read"],
+    scopes: ["Channel.ReadBasic.All", "ChannelSettings.Read.All", "ChannelSettings.ReadWrite.All", "GroupMember.Read.All", "Group.Read.All", "Directory.Read.All", "Group.ReadWrite.All", "Directory.ReadWrite.All","Calendars.Read", "Calendars.ReadWrite", "Presence.Read","Presence.Read.All","User.Read","User.Read.All", "Mail.Read"],
     forceRefresh: false // Set this to "true" to skip a cached token and go to the server to get a new token
 };

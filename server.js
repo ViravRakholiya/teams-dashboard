@@ -1,5 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
+const client = require('@microsoft/microsoft-graph-client');
 const path = require('path');
 
 const DEFAULT_PORT = process.env.PORT || 3000;
